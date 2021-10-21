@@ -29,9 +29,13 @@ const App = () => {
     },
   ];
 
+  const [data, setData] = useState(expenses);
   const addExpenseHandler = (expense) => {
     console.log("In app.js");
-    console.log(expense);
+    console.log(data);
+    setData((prevData) => {
+      return [...prevData, expense];
+    });
   };
 
   return (

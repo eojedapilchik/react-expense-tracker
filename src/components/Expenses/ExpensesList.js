@@ -9,7 +9,7 @@ export const ExpensesList = ({ items }) => {
   const [filteredYear, setFilteredYear] = useState("2021");
 
   const filterYearHandler = (selectedYear) => {
-    // /console.log(selectedYear);
+    //console.log(selectedYear);
     setFilteredYear(selectedYear);
   };
 
